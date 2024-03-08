@@ -102,7 +102,7 @@ export default function FoOldal() {
                     style={{ maxWidth: "100px" ,border:"0.5px solid grey",margin:"2px"}}
                 //onClick={handleSubmit}
                 >
-                    Mentés
+                    Küld
                 </button></form></div>
             <div className="container mt-3">
                 <table className="table table-striped">
