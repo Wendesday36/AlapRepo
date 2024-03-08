@@ -1,0 +1,16 @@
+
+
+.content{
+    margin: auto;
+    max-width: 2500px;
+    padding: 15px;
+    
+}
+.valasztas{
+    border: 1px solid grey;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    grid-template-columns: 1fr !important;
+    max-width:  1000px;
+}
