@@ -59,9 +59,9 @@ export default function FoOldal() {
 
         <div className="content"><h1>Kizöldítjük a Földet!</h1>
         <div className="valaszt">
-        
+             <label > Mit tettél ma a Földért:</label>
             <form className="valasztas" onSubmit={handleSubmit}>
-                <label htmlFor="cs_azon"> Mit tettél ma a Földért:</label>
+           
                 <div>
                     <select
                     style={{ maxWidth: "300px" }}
