@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -17,9 +18,32 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('osztaly_id');
             $table->rememberToken();
             $table->timestamps();
         });
+
+
+        
+        User::create([
+            'name' => "valami", 
+            'email' => "valami@valami.com",
+            "password"=>"valami",
+            "osztaly_id"=>"SZFA1",
+        ]);
+        User::create([
+            'name' => "valaki", 
+            'email' => "valaki@valaki.com",
+            "password"=>"valaki",
+            "osztaly_id"=>"SZFA2",
+        ]);
+        User::create([
+            'name' => "Vilma", 
+            'email' => "vilma@vilma.com",
+            "password"=>"vilma",
+            "osztaly_id"=>"SZFA1",
+        ]);
+
     }
 
     /**

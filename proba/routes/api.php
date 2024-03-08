@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BejegyzesekController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route:: get('/bejegyzesek',[BejegyzesekController::class,'index']);
+
+Route:: get('/bejegyzesek/{osztaly_id}',[BejegyzesekController::class,'show']);
+Route:: post('/bejegyzes',[BejegyzesekController::class,'store']);
+
